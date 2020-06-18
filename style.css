@@ -1,0 +1,28 @@
+/* *{
+    outline: 1px dotted black
+}
+
+.panel-body{
+    background-color: lightblue;
+
+} */
+#weatherPanels{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.panel{
+    width: calc(20% - 20px);
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+#header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
