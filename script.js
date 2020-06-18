@@ -78,28 +78,6 @@
         $("#todayTemp").text((data.main.temp - 273.15) * 1.80 + 32).toFixed(2) + " &deg;" + "F";
         // $(fTemp).html(fTemp.toFixed(2) + "&deg;");
 
-        // $("#todayTemp").text(data.main.temp - 273.15) * 1.80 + 32;
-        // fTemp = 
-
-        //    lead = ((data.main.temp - 273.15) * 1.80 + 32).toFixed(2) + " &deg;" + "F"
-        // $("#todayHumidity").text(data.main.humidity)
-        // $("#todayWindSpeed").text(data.wind.speed)
-        // $("#todayUV").text()
-
-        // base: "stations"
-        // clouds: {all: 75}
-        // cod: 200
-        // coord: {lon: -75.16, lat: 39.95}
-        // dt: 1592345346
-        // id: 4560349
-        // main: {temp: 296.9, feels_like: 290.84, temp_min: 295.93, temp_max: 298.15, pressure: 1026, …}
-        // name: "Philadelphia"
-        // sys: {type: 1, id: 5344, country: "US", sunrise: 1592299891, sunset: 1592353887}
-        // timezone: -14400
-        // visibility: 16093
-        // weather: [{…}]
-        // wind: {speed: 8.2, deg: 80, gust: 10.8}
-    }
 
     function getUV(lat, lon) {
 
@@ -145,12 +123,6 @@
 
             panelImg.attr("src", dataPoint.weather[0].icon)
 
-    //   // Creating an image tag
-    //   var personImage = $("<img>");
-
-    //   // Giving the image tag an src attribute of a proprty pulled off the
-    //   // result item
-    //   personImage.attr("src", results[i].images.fixed_height.url);
 
 
             var panelHumidity = $("<div>").addClass("panel-body").text(dataPoint.main.humidity)
@@ -159,24 +131,8 @@
             panel.append(panelDate, panelTemp, panelImg, panelHumidity).appendTo($("#weatherPanels"))
 
         }
-
-        // F = (K - 273.15) * 1.80 + 32
-        // var fTemp = (weatherData.main.temp - 273.15) * 1.80 + 32;
-
-        // <div class="panel panel-default">
-        // <div class="panel-body">A Basic Panel</div>
-        // </div>
-
-        // console.log(panelDate)
     }
-// citiesButton()
-// $(".saveBtn").on("click", function(event){
-//     var el = $(this)
-//     var theTime = el.data("time")
 
-//     citiesButton(theTime)
-//     console.log("click")
-// })
 
 // function storeData(data, //cityName???// ){
 //     // Moving items to local storage after they've been saved
@@ -188,20 +144,6 @@
 //     return JSON.parse(localStorage.getItem(name))
 // }
 
-
-// // If not time array, set it to default TimeArray
-// var timeArray = retrieveData("timeArray") || defaultTimeArray
-
-// // Will be hours on scheduler
-// var timeBlock = $("#timeBlock")
-// // Using moment JS to format date from military time to standard time
-// var displayTime = moment().format("h a")
-// console.log(moment().format("dddd MMMM DD YYYY"))
-// // Retrieving date from the current day
-// $("#currentDay").text(moment().format("dddd MMMM DD YYYY"))
-
-// // Using moment JS to retrieve current time for planning blocks
-// var currentHour = moment().format("HH")
 
 // Search button icon
 // var saveBtn = $("<div></div>").addClass("saveBtn col-1 ").data("time", timeObj.time).append("<i class='fa fa-save'></i>"); //appends save icon to save button area
