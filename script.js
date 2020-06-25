@@ -10,7 +10,7 @@ getWeatherForCity("boston")
 // Calls API using method "GET"
 function getWeatherForCity(cityName) {
     // Calls info from open weather map and then adds personal apiKey to address
-    var todayQueryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey
+    var todayQueryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey
     // Calls info from open weather map for 5 day forecast
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey
 
@@ -138,15 +138,15 @@ function displayPanel(data) {
 }
 
 
-// function storeData(data, //cityName???// ){
-//     // Moving items to local storage after they've been saved
-//     localStorage.setItem(name, JSON.stringify(data));
-// }
+function storeData(data, //cityName???// ){
+    // Moving items to local storage after they've been saved
+    localStorage.setItem(name, JSON.stringify(data));
+}
 
-// // Function that will take data out of local storage and parse it
-// function retrieveData(name){
-//     return JSON.parse(localStorage.getItem(name))
-// }
+// Function that will take data out of local storage and parse it
+function retrieveData(name){
+    return JSON.parse(localStorage.getItem(name))
+}
 
 
 // Search button icon

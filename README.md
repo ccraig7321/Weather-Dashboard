@@ -23,6 +23,12 @@ Once the user has decided viewed the forecast, they will be able to search for a
 ![Image of WEATHER DASH FULL](images/weatherdashboardfull.png)
 ___
 
+## Link to Project
+
+https://ccraig7321.github.io/Weather-Dashboard/
+
+___
+
 ## Technologies
 
 - HTML
