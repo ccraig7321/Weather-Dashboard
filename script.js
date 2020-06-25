@@ -138,15 +138,15 @@ function displayPanel(data) {
 }
 
 
-function storeData(data, //cityName???// ){
-    // Moving items to local storage after they've been saved
-    localStorage.setItem(name, JSON.stringify(data));
-}
+// function storeData(data){
+//     // Moving items to local storage after they've been saved
+//     localStorage.setItem(name, JSON.stringify(data));
+// }
 
-// Function that will take data out of local storage and parse it
-function retrieveData(name){
-    return JSON.parse(localStorage.getItem(name))
-}
+// // Function that will take data out of local storage and parse it
+// function retrieveData(name){
+//     return JSON.parse(localStorage.getItem(name))
+// }
 
 
 // Search button icon
